@@ -167,6 +167,10 @@ bindsym $mod+Shift+s exec --no-startup-id gnome-screenshot -i
 bindsym $mod+Shift+t exec "notify-send 'hy'"
 
 # Brightness control
+# Add to /etc/sudoers:
+# Cmnd_Alias PASSWORDLESS = /usr/bin/brightnessctl
+# %root ALL=(ALL) NOPASSWD: PASSWORDLESS
+# madness ALL = (root) NOPASSWD: /usr/bin/brightnessctl
 bindsym XF86MonBrightnessUp   exec "sudo brightnessctl s +5%"
 bindsym XF86MonBrightnessDown exec "sudo brightnessctl s 5%-"
 
