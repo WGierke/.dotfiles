@@ -174,6 +174,9 @@ bindsym $mod+Shift+t exec "notify-send 'hy'"
 bindsym XF86MonBrightnessUp   exec "sudo brightnessctl s +5%"
 bindsym XF86MonBrightnessDown exec "sudo brightnessctl s 5%-"
 
+# Bluetooth
+bindsym XF86Bluetooth exec blueman-manager
+
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
